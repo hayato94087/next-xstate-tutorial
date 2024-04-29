@@ -12,6 +12,7 @@ export const toggleMachine = createMachine({
     Active: {
       // targetを省略した記述方法
       on: { click: 'Inactive' },
+      after: { 2000: 'Inactive' },
     },
   },
 });
